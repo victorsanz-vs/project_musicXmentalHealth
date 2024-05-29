@@ -15,6 +15,8 @@ if(length(paquetes)) install.packages(paquetes)
 # Cargar los paquetes:
 lapply(paquetes, require, character.only = TRUE)
 
+# print(paste("Directorio de trabajo actual:", getwd()))
+
 # Leer el archivo de datos:
 music_mxmh <- read_csv(here("D:/githubDrop/project_musicXmentalHealth", "mxmh_survey_results.csv"))
 str(music_mxmh)
